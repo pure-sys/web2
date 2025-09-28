@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luciva Games</title>
+  <meta name="description" content="Luciva Games builds delightful casual games played by hundreds of thousands of people worldwide." />
+  <link rel="icon" href="assets/img/favicons/favicon.ico" />
+  <style>
+    :root{
+      --brand:#667AE4; --ink:#1f2430; --muted:#6b7280; --bg:#f9f9fb; --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #ececf3;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:800;letter-spacing:.2px;color:var(--brand)}
+    .menu{display:flex;gap:16px;align-items:center}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid #e5e7eb;background:#fff;color:var(--ink);padding:10px 14px;border-radius:999px;font-weight:600}
+    .btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+    .hero{padding:72px 0}
+    .hero h1{font-size:clamp(32px,5vw,56px);line-height:1.05;margin:0 0 12px}
+    .hero p{font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:720px;margin:0 0 24px}
+    .stores{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 0}
+    .store-img{height:56px;width:auto;display:block;border-radius:10px;box-shadow:0 2px 8px rgba(17,24,39,.08)}
+    .card{background:var(--card);border:1px solid #eef0f5;border-radius:18px;padding:28px}
+    .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:32px}
+    @media (max-width: 900px){.grid{grid-template-columns:1fr}}
+    footer{border-top:1px solid #ececf3;margin-top:56px}
+    .foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:18px 0;color:var(--muted);font-size:14px}
+    .link-row{display:flex;gap:16px;flex-wrap:wrap}
+    .pill{display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;border:1px solid #e5e7eb;background:#fff}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">Luciva Games</a>
+      <nav class="menu">
+        <a class="pill" href="terms.html" title="Terms & Conditions">Terms</a>
+        <a class="pill" href="privacy.html" title="Privacy Policy">Privacy</a>
+        <a class="btn primary" href="mailto:info@lucivalabs.com" title="Contact Luciva Games">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="grid">
+        <div class="card">
+          <h1>Delightful casual games,<br/> loved worldwide.</h1>
+          <p>Luciva Games builds delightful casual games played by hundreds of thousands of people worldwide.</p>
+
+          <div class="stores">
+            <!-- App Store (LCVA LLC) -->
+            <a href="https://apps.apple.com/us/developer/lcva-llc/id1785698076" aria-label="Download on the App Store">
+              <img class="store-img" src="assets/img/logos/App_Store.webp" alt="Download on the App Store" />
+            </a>
+            <!-- Google Play (LCVA LABS developer page) -->
+            <a href="https://play.google.com/store/apps/developer?id=LCVA+LABS" aria-label="Get it on Google Play">
+              <img class="store-img" src="assets/img/logos/Play_Store.webp" alt="Get it on Google Play" />
+            </a>
+          </div>
+        </div>
+
+        <div class="card" aria-label="Quick Links">
+          <h2 style="margin:0 0 12px;color:#667AE4;font-size:20px;">Links</h2>
+          <ul style="margin:0;padding-left:18px;line-height:1.9">
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="mailto:info@lucivalabs.com">Contact: info@lucivalabs.com</a></li>
+            <li><a href="https://apps.apple.com/us/developer/lcva-llc/id1785698076">App Store – LCVA LLC</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=LCVA+LABS">Google Play – LCVA LABS</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <span>© 2025 LCVA — All rights reserved.</span>
+      <div class="link-row">
+        <a href="terms.html">Terms</a>
+        <span>•</span>
+        <a href="privacy.html">Privacy</a>
+        <span>•</span>
+        <a href="mailto:info@lucivalabs.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
